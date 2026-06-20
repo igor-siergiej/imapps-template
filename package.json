@@ -1,0 +1,44 @@
+{
+  "name": "__APP_NAME__",
+  "private": true,
+  "repository": "https://github.com/igor-siergiej/__APP_NAME__",
+  "author": "Igor Siergiej <igorsiergiej@gmail.com>",
+  "scripts": {
+    "start:web": "dotenv -e .env -- bun run --filter @__APP_NAME__/web start",
+    "start:api": "dotenv -e .env -- bun run --filter @__APP_NAME__/api start",
+    "start": "concurrently \"bun run start:web\" \"bun run start:api\"",
+    "build": "bun run --filter '*' build",
+    "lint": "biome check .",
+    "lint:fix": "biome check --fix --unsafe .",
+    "format": "biome format --write .",
+    "audit": "fallow-audit",
+    "init": "bun run scripts/init.ts",
+    "prepare": "husky",
+    "release": "semantic-release"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@biomejs/biome": "2.2.5",
+    "@imapps/dev-scripts": "0.1.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^13.0.0",
+    "@semantic-release/exec": "^7.1.0",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/npm": "^12.0.1",
+    "@semantic-release/release-notes-generator": "^14.0.1",
+    "concurrently": "^9.2.1",
+    "dotenv-cli": "^8.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.0",
+    "semantic-release": "^24.2.0",
+    "typescript": "^5.8.3",
+    "vite": "^7.0.4"
+  },
+  "packageManager": "bun@1",
+  "version": "0.0.0",
+  "lint-staged": {
+    "*.{ts,tsx,json}": "biome check --fix --unsafe"
+  }
+}

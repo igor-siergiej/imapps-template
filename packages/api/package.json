@@ -1,0 +1,23 @@
+{
+  "name": "@__APP_NAME__/api",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "bun --watch src/index.ts",
+    "start:e2e": "bun src/index.ts",
+    "build": "cp -r src build",
+    "test": "bun test",
+    "test:coverage": "bun test --coverage",
+    "test:run": "bun test"
+  },
+  "dependencies": {
+    "@__APP_NAME__/types": "workspace:*",
+    "@imapps/api-utils": "0.6.0",
+    "dotenv": "^17.2.2",
+    "hono": "^4.6.14",
+    "typescript": "^5.9.2"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.1.14"
+  }
+}

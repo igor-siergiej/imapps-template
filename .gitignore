@@ -1,0 +1,19 @@
+node_modules
+.git
+build
+dist
+.env
+tsconfig.tsbuildinfo
+.vscode
+
+packages/web/test-results/
+packages/web/playwright-report/
+packages/web/blob-report/
+packages/web/playwright/.cache/
+.playwright-mcp/
+packages/web/coverage/
+
+# Git worktrees
+.worktrees
+# fallow audit binary (downloaded on demand)
+.tooling/

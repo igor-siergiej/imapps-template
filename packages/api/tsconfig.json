@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@__APP_NAME__/types": ["../types/src"]
+    }
+  },
+  "include": ["src"]
+}
