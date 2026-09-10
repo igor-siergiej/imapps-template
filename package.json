@@ -40,5 +40,6 @@
   "version": "0.0.0",
   "lint-staged": {
     "*.{ts,tsx,json}": "biome check --fix --unsafe"
-  }
+  },
+  "license": "AGPL-3.0-or-later"
 }
