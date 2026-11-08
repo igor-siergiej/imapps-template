@@ -1,0 +1,17 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+  - package-ecosystem: bun
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    groups:
+      # vite-plus pins oxlint/oxfmt/vitest; @imapps/oxc-config pins the same oxlint/oxfmt as peers. Bump together.
+      toolchain:
+        patterns: ['vite-plus', 'vite', '@imapps/oxc-config', 'oxlint', 'oxfmt', '@oxlint/plugins']
+      dev-tooling:
+        dependency-type: development
