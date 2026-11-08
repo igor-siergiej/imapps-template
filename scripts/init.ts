@@ -63,4 +63,4 @@ await writeFile(pkgPath, `${JSON.stringify(pkg, null, 2)}\n`);
 
 await rm(join(root, 'scripts'), { recursive: true, force: true });
 
-console.log(`Initialised "${slug}". Next: bun install && git init`);
+console.log(`Initialised "${slug}". Next: bun install && bun run format && git init`);
