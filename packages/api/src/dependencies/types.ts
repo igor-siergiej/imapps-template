@@ -1,5 +1,5 @@
-import type { Logger, MongoDbConnection } from '@imapps/api-utils';
 import type { Item } from '@__APP_NAME__/types';
+import type { Logger, MongoDbConnection } from '@imapps/api-utils';
 
 import type { IdGenerator } from '../domain/IdGenerator';
 import type { ItemRepository } from '../domain/ItemRepository';

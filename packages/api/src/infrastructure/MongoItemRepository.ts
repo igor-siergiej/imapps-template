@@ -1,5 +1,5 @@
-import type { MongoDbConnection } from '@imapps/api-utils';
 import type { Item } from '@__APP_NAME__/types';
+import type { MongoDbConnection } from '@imapps/api-utils';
 
 import type { Collections } from '../dependencies/types';
 import type { ItemRepository } from '../domain/ItemRepository';

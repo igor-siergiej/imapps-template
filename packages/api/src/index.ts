@@ -1,5 +1,3 @@
-import 'dotenv/config';
-
 import { createApp } from '@imapps/api-utils/hono';
 
 import { config } from './config';
@@ -46,4 +44,4 @@ export const onStartup = async () => {
     }
 };
 
-onStartup();
+void onStartup();

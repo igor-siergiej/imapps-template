@@ -22,7 +22,7 @@ export const App = () => {
     }, []);
 
     useEffect(() => {
-        loadItems();
+        void loadItems();
     }, [loadItems]);
 
     const addItem = async (event: FormEvent) => {

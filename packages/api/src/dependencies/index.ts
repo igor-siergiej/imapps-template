@@ -1,4 +1,3 @@
-// biome-ignore-all lint/correctness/noConstructorReturn: DI factory pattern returns instance from constructor
 import { Logger, MongoDbConnection } from '@imapps/api-utils';
 
 import { ItemService } from '../domain/ItemService';
