@@ -46,7 +46,8 @@
     "vite-plus": "1.5.0"
   },
   "overrides": {
-    "vite": "catalog:"
+    "vite": "catalog:",
+    "decode-uri-component": "^0.5.1"
   },
   "packageManager": "bun@1.4.4",
   "version": "0.0.0",
