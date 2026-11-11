@@ -1,14 +1,17 @@
 import { CreateItemSchema } from '@__APP_NAME__/types';
 import type { Context } from 'hono';
+import type { BlankEnv } from 'hono/types';
 
 import { dependencyContainer } from '../../dependencies/container';
 import { DependencyToken } from '../../dependencies/types';
+
+type ItemContext = Context<BlankEnv, '/api/items/:id'>;
 
 const getItemService = () => dependencyContainer.resolve(DependencyToken.ItemService);
 
 export const getItems = async (c: Context) => c.json(await getItemService().listItems(), 200);
 
-export const getItem = async (c: Context) => {
+export const getItem = async (c: ItemContext) => {
     const item = await getItemService().getItem(c.req.param('id'));
 
     if (!item) {
@@ -28,7 +31,7 @@ export const addItem = async (c: Context) => {
     return c.json(await getItemService().createItem(parsed.data.name), 201);
 };
 
-export const deleteItem = async (c: Context) => {
+export const deleteItem = async (c: ItemContext) => {
     const deleted = await getItemService().deleteItem(c.req.param('id'));
 
     if (!deleted) {

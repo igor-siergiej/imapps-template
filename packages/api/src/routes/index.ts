@@ -7,8 +7,8 @@ import { addItem, deleteItem, getItem, getItems } from '../interfaces/ItemHandle
 export const createRoutes = (): Hono => {
     const router = new Hono();
 
-    router.get('/api/health', (c) => {
-        const databaseConnected = dependencyContainer.resolve(DependencyToken.Database).ping();
+    router.get('/api/health', async (c) => {
+        const databaseConnected = await dependencyContainer.resolve(DependencyToken.Database).ping();
 
         return c.json({ status: databaseConnected ? 'healthy' : 'unhealthy' }, databaseConnected ? 200 : 500);
     });

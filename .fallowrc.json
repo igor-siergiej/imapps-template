@@ -5,7 +5,8 @@
     "**/*.integration.test.ts",
     "**/dist/**",
     "**/build/**",
-    "**/coverage/**"
+    "**/coverage/**",
+    "scripts/**"
   ],
   "ignoreUnresolvedImports": ["bun:test"],
   "ignoreDependencies": []

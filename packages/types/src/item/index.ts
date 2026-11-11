@@ -9,4 +9,5 @@ export const ItemSchema = z.object({
 export const CreateItemSchema = ItemSchema.pick({ name: true });
 
 export type Item = z.infer<typeof ItemSchema>;
+
 export type CreateItem = z.infer<typeof CreateItemSchema>;

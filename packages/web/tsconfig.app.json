@@ -12,11 +12,10 @@
     "noEmit": true,
     "strict": true,
     "noUnusedLocals": true,
-    "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
       "@__APP_NAME__/types": ["../types/src"]
     }
   },
-  "include": ["src"]
+  "include": ["src", "../types/src"]
 }

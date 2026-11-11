@@ -1,6 +1,7 @@
 {
   "name": "__APP_NAME__",
   "private": true,
+  "type": "module",
   "repository": "https://github.com/igor-siergiej/__APP_NAME__",
   "author": "Igor Siergiej <igorsiergiej@gmail.com>",
   "scripts": {
@@ -8,38 +9,47 @@
     "start:api": "dotenv -e .env -- bun run --filter @__APP_NAME__/api start",
     "start": "concurrently \"bun run start:web\" \"bun run start:api\"",
     "build": "bun run --filter '*' build",
-    "lint": "biome check .",
-    "lint:fix": "biome check --fix --unsafe .",
-    "format": "biome format --write .",
+    "check": "vp check",
+    "lint": "vp check",
+    "lint:fix": "vp check --fix",
+    "format": "vp fmt",
+    "test": "bun run --filter '*' test",
     "audit": "fallow-audit",
-    "init": "bun run scripts/init.ts",
-    "prepare": "husky",
+    "init": "bun scripts/init.ts",
+    "prepare": "vp config --no-agent",
     "release": "semantic-release"
   },
   "workspaces": [
     "packages/*"
   ],
   "devDependencies": {
-    "@biomejs/biome": "2.2.5",
-    "@imapps/dev-scripts": "0.1.0",
+    "@commitlint/cli": "^20.1.0",
+    "@commitlint/config-conventional": "^20.0.0",
+    "@imapps/dev-scripts": "7.0.0",
+    "@imapps/oxc-config": "7.0.0",
     "@semantic-release/changelog": "^6.0.3",
-    "@semantic-release/commit-analyzer": "^13.0.0",
+    "@semantic-release/commit-analyzer": "^13.0.1",
     "@semantic-release/exec": "^7.1.0",
     "@semantic-release/git": "^10.0.1",
-    "@semantic-release/npm": "^12.0.1",
-    "@semantic-release/release-notes-generator": "^14.0.1",
-    "concurrently": "^9.2.1",
-    "dotenv-cli": "^8.0.0",
-    "husky": "^9.1.7",
-    "lint-staged": "^16.2.0",
-    "semantic-release": "^24.2.0",
-    "typescript": "^5.8.3",
-    "vite": "^7.0.4"
+    "@semantic-release/npm": "^12.0.2",
+    "@semantic-release/release-notes-generator": "^14.1.1",
+    "@types/bun": "^1.4.4",
+    "concurrently": "^9.2.5",
+    "dotenv-cli": "^11.1.0",
+    "semantic-release": "^24.2.9",
+    "typescript": "^7.0.2",
+    "vite": "catalog:",
+    "vite-plus": "catalog:"
   },
-  "packageManager": "bun@1",
+  "catalog": {
+    "vite": "npm:@voidzero-dev/vite-plus-core@1.5.0",
+    "vite-plus": "1.5.0"
+  },
+  "overrides": {
+    "vite": "catalog:",
+    "decode-uri-component": "^0.5.1"
+  },
+  "packageManager": "bun@1.4.4",
   "version": "0.0.0",
-  "lint-staged": {
-    "*.{ts,tsx,json}": "biome check --fix --unsafe"
-  },
   "license": "AGPL-3.0-or-later"
 }
