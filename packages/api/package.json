@@ -13,7 +13,7 @@
   "dependencies": {
     "@__APP_NAME__/types": "workspace:*",
     "@imapps/api-utils": "7.0.0",
-    "hono": "^4.13.16",
+    "hono": "^4.13.17",
     "mongodb": "^7.8.0"
   },
   "devDependencies": {
