@@ -7,7 +7,7 @@
       "devDependencies": {
         "@commitlint/cli": "^21.2.4",
         "@commitlint/config-conventional": "^21.2.4",
-        "@imapps/dev-scripts": "7.0.0",
+        "@imapps/dev-scripts": "7.0.1",
         "@imapps/oxc-config": "7.0.1",
         "@semantic-release/changelog": "^7.0.0",
         "@semantic-release/commit-analyzer": "^13.0.1",
@@ -58,7 +58,7 @@
         "@testing-library/react": "^16.3.3",
         "@types/react": "^19.3.0",
         "@types/react-dom": "^19.3.0",
-        "@vitejs/plugin-react": "^6.2.1",
+        "@vitejs/plugin-react": "^6.3.0",
         "jsdom": "^31.0.0",
         "vite": "catalog:",
         "vite-plus": "catalog:",
@@ -140,7 +140,7 @@
 
     "@imapps/api-utils": ["@imapps/api-utils@7.0.0", "", { "dependencies": { "hono": "^4.6.14", "minio": "^8.0.0" }, "peerDependencies": { "mongodb": "^7.0.0" } }, "sha512-8CkF0GGe/eW+sq+Cv92/pvGtHfxoPNZ5nleyJqrYVTSVvpzQj97feeczXxkkPUFuzV5FxscbyM7Ni6dGsTGvlw=="],
 
-    "@imapps/dev-scripts": ["@imapps/dev-scripts@7.0.0", "", { "bin": { "fallow-audit": "bin/fallow-audit.sh" } }, "sha512-Zh+/PORucoSBotV6/9q/4qd8YIK9cly6xkl63rGUOtZQ1F1Sm27FEgWZSA1S6xh1OEfW5xhU4U3r9lQKRsAe0g=="],
+    "@imapps/dev-scripts": ["@imapps/dev-scripts@7.0.1", "", { "bin": { "fallow-audit": "bin/fallow-audit.sh" } }, "sha512-BKBI1lwXn2WPDIFewqiaf0j+z6x/ufwx9a2+ubV0rBrh2TP+TIT7jRQDToYyElLSs2qSdvXtR97FmSY0bL6INw=="],
 
     "@imapps/oxc-config": ["@imapps/oxc-config@7.0.1", "", { "peerDependencies": { "@oxlint/plugins": ">=1.90.0 <2", "oxfmt": ">=0.75.0 <1", "oxlint": ">=1.90.0 <2" } }, "sha512-l7FBg1R7S9rYHBAg2iJH/ZyGjeOOjrXtYSeMr/3BCMD1JVn+H5BzO2FwmgGuYWzGETHD8gvLPwNkluEdr0Rs3A=="],
 
@@ -376,7 +376,7 @@
 
     "@typescript/typescript-win32-x64": ["@typescript/typescript-win32-x64@7.0.2", "", { "os": "win32", "cpu": "x64" }, "sha512-0BQ3HkAHHlKLSp1qRvf3SUhGpGsDuhB/jgFw75guyqbxJqEaS0Cw/VFO8i2nHglJUzQCRtMMR/IBAKE3ETMC4g=="],
 
-    "@vitejs/plugin-react": ["@vitejs/plugin-react@6.2.1", "", { "dependencies": { "@rolldown/pluginutils": "^1.0.1" }, "peerDependencies": { "@rolldown/plugin-babel": "^0.1.7 || ^0.2.0 || ^0.3.0", "babel-plugin-react-compiler": "^1.0.0", "oxc-transform-react": ">=0.152.0 <0.157.0", "vite": "^8.0.0" }, "optionalPeers": ["@rolldown/plugin-babel", "babel-plugin-react-compiler", "oxc-transform-react"] }, "sha512-9KyWCij3r0+qLG3Q62vBmv0VyevmYibAtxaCIVK9o0k6CXgaajZRIe8tpfchQcdZArJ5b/7OrIz4W3b2uxVRDA=="],
+    "@vitejs/plugin-react": ["@vitejs/plugin-react@6.3.0", "", { "dependencies": { "@rolldown/pluginutils": "^1.0.1" }, "peerDependencies": { "@rolldown/plugin-babel": "^0.1.7 || ^0.2.0 || ^0.3.0", "babel-plugin-react-compiler": "^1.0.0", "oxc-transform-react": ">=0.152.0 <0.157.0", "vite": "^8.0.0" }, "optionalPeers": ["@rolldown/plugin-babel", "babel-plugin-react-compiler", "oxc-transform-react"] }, "sha512-H9E955aVvD2F4zNHCw4eIZbIfF6xKldlh7MNu+hSU7xwQzh65lI/N+CJWqmfhi0PEjDXIt/H7T7J/4wU63KJiw=="],
 
     "@vitest/browser": ["@vitest/browser@5.1.0", "", { "dependencies": { "@blazediff/core": "1.10.0", "@vitest/mocker": "5.1.0", "@vitest/ui": "5.1.0", "@vitest/utils": "5.1.0", "magic-string": "^1.4.3", "pngjs": "^7.0.0", "sirv": "^3.0.2", "tinyrainbow": "^3.2.0", "ws": "^8.22.0" }, "peerDependencies": { "vitest": "5.1.0" } }, "sha512-2sjGVAC/Rs8Jwv+xxBgklNG2g1LGyNgcFMBw71AcfBstLz25UGv1+fVvvZ+z8IfSuNg3nipERijnFtoEIdRDEA=="],
 
