@@ -29,7 +29,7 @@
       "version": "0.0.0",
       "dependencies": {
         "@__APP_NAME__/types": "workspace:*",
-        "@imapps/api-utils": "7.0.0",
+        "@imapps/api-utils": "7.0.1",
         "hono": "^4.13.17",
         "mongodb": "^7.8.0",
       },
@@ -138,7 +138,7 @@
 
     "@exodus/bytes": ["@exodus/bytes@1.16.0", "", { "peerDependencies": { "@noble/hashes": "^1.8.0 || ^2.0.0" }, "optionalPeers": ["@noble/hashes"] }, "sha512-IcpW84uEn3N7ETtNZMlxKhfl6Pec8rUNGOTBtWbK1FKhJxIFAptZyVrvVRVBimAJxJCgc3PxepxkdWWG4DVzfA=="],
 
-    "@imapps/api-utils": ["@imapps/api-utils@7.0.0", "", { "dependencies": { "hono": "^4.6.14", "minio": "^8.0.0" }, "peerDependencies": { "mongodb": "^7.0.0" } }, "sha512-8CkF0GGe/eW+sq+Cv92/pvGtHfxoPNZ5nleyJqrYVTSVvpzQj97feeczXxkkPUFuzV5FxscbyM7Ni6dGsTGvlw=="],
+    "@imapps/api-utils": ["@imapps/api-utils@7.0.1", "", { "dependencies": { "hono": "^4.6.14", "minio": "^8.0.0" }, "peerDependencies": { "mongodb": "^7.0.0" } }, "sha512-niUd1p2MTHBCHWTqoSI6r1LpHSKygGVe6xb83GLi7oRXwtwFZy7RE4TtcCmmHbWPYtUTKgCPOA4vPv6iJRkEpQ=="],
 
     "@imapps/dev-scripts": ["@imapps/dev-scripts@7.0.0", "", { "bin": { "fallow-audit": "bin/fallow-audit.sh" } }, "sha512-Zh+/PORucoSBotV6/9q/4qd8YIK9cly6xkl63rGUOtZQ1F1Sm27FEgWZSA1S6xh1OEfW5xhU4U3r9lQKRsAe0g=="],
 
