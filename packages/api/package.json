@@ -14,7 +14,7 @@
     "@__APP_NAME__/types": "workspace:*",
     "@imapps/api-utils": "7.0.0",
     "hono": "^4.13.17",
-    "mongodb": "^7.8.0"
+    "mongodb": "^7.9.0"
   },
   "devDependencies": {
     "@types/bun": "^1.4.4"
