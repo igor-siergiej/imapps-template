@@ -25,7 +25,7 @@
   "devDependencies": {
     "@commitlint/cli": "^21.2.4",
     "@commitlint/config-conventional": "^21.2.4",
-    "@imapps/dev-scripts": "7.0.0",
+    "@imapps/dev-scripts": "7.0.1",
     "@imapps/oxc-config": "7.0.1",
     "@semantic-release/changelog": "^7.0.0",
     "@semantic-release/commit-analyzer": "^13.0.1",
@@ -36,7 +36,7 @@
     "@types/bun": "^1.4.4",
     "concurrently": "^10.0.7",
     "dotenv-cli": "^11.1.0",
-    "semantic-release": "^25.0.9",
+    "semantic-release": "^26.0.1",
     "typescript": "^7.0.2",
     "vite": "catalog:",
     "vite-plus": "catalog:"
